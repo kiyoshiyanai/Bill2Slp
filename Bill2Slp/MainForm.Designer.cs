@@ -130,6 +130,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "前月末";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -139,6 +140,7 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "参照";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button3
             // 
@@ -148,6 +150,7 @@
             this.button3.TabIndex = 10;
             this.button3.Text = "参照";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button4
             // 
@@ -157,6 +160,7 @@
             this.button4.TabIndex = 11;
             this.button4.Text = "参照";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button5
             // 
@@ -166,6 +170,7 @@
             this.button5.TabIndex = 12;
             this.button5.Text = "参照";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // button6
             // 
@@ -175,6 +180,7 @@
             this.button6.TabIndex = 13;
             this.button6.Text = "参照";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // textBox2
             // 
@@ -212,6 +218,7 @@
             this.button7.TabIndex = 18;
             this.button7.Text = "設定";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.Button7_Click);
             // 
             // button8
             // 
@@ -221,6 +228,7 @@
             this.button8.TabIndex = 19;
             this.button8.Text = "実行";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.Button8_Click);
             // 
             // button9
             // 
@@ -230,10 +238,16 @@
             this.button9.TabIndex = 20;
             this.button9.Text = "終了";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
             // 
             // openFileDialog1
             // 
+            this.openFileDialog1.DefaultExt = "CSV(*.csv)";
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "SLP(*.slp)";
             // 
             // MainForm
             // 
@@ -263,6 +277,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
             this.Text = "請求書変換システム";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
